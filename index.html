@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GAREN STORE 26</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <img id="logo" src="Garen 26.jpg" alt="Logo">
+    <h2>GAREN <span>STORE 26</span></h2>
+  </div>
+  <button id="menuBtn">☰</button>
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#produk">Produk</a>
+    <a href="#gratis">Grup Gratis</a>
+    <a href="#kontak">Kontak</a>
+    <button onclick="openAuth()">LOGIN / REGISTER</button>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="banner">
+    <div class="banner-text">
+      GAREN STORE 26 • ALL OWN PT • PP GRUP • PP CH • SALURAN •
+      GAREN STORE 26 • ALL OWN PT • PP GRUP • PP CH • SALURAN •
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <div>
+      <h4>WELCOME TO OFFICIAL MARKETPLACE</h4>
+      <h1>GAREN STORE <span>26</span></h1>
+      <p>Marketplace PP Grup, PP Channel, Saluran dan All Own Partner.</p>
+      <a href="#produk" class="btn">LIHAT PRODUK ↗</a>
+    </div>
+    <img src="banner.png" class="hero-logo" alt="Logo Garen Store">
+  </div>
+</section>
+
+<section id="produk">
+  <h2>MARKETPLACE <span>KAMI</span></h2>
+  <p class="subtitle">Pilih kategori produk yang kamu inginkan.</p>
+
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('grup',this)">PP GRUP</button>
+    <button class="tab" onclick="showTab('channel',this)">PP CH</button>
+    <button class="tab" onclick="showTab('saluran',this)">SALURAN</button>
+    <button class="tab" onclick="showTab('partner',this)">ALL OWN PT</button>
+  </div>
+
+  <div id="grup" class="panel active">
+    <h3>LIST PP GRUP</h3>
+    <p>GAREN STORE26 | REGION JATENG</p>
+    <div class="products">
+      <div class="card"><img src="Garen 26.jpg" alt="PP Grup"><h3>PP GRUP 5K</h3><p>8 MEMBER</p><b>Rp5.000</b><button onclick="order('PP Grup 5K - 8 Member')">PESAN SEKARANG</button></div>
+      <div class="card"><img src="Garen 26.jpg" alt="PP Grup"><h3>PP GRUP 10K</h3><p>13 MEMBER</p><b>Rp10.000</b><button onclick="order('PP Grup 10K - 13 Member')">PESAN SEKARANG</button></div>
+      <div class="card"><img src="Garen 26.jpg" alt="PP Grup"><h3>PP GRUP 15K</h3><p>18 MEMBER</p><b>Rp15.000</b><button onclick="order('PP Grup 15K - 18 Member')">PESAN SEKARANG</button></div>
+      <div class="card"><img src="Garen 26.jpg" alt="PP Grup"><h3>PP GRUP 20K</h3><p>25 MEMBER</p><b>Rp20.000</b><button onclick="order('PP Grup 20K - 25 Member')">PESAN SEKARANG</button></div>
+      <div class="card"><img src="Garen 26.jpg" alt="PP Grup"><h3>PP GRUP 30K</h3><p>40 MEMBER</p><b>Rp30.000</b><button onclick="order('PP Grup 30K - 40 Member')">PESAN SEKARANG</button></div>
+      <div class="card"><img src="Garen 26.jpg" alt="PP Grup"><h3>PP GRUP 40K</h3><p>50 MEMBER</p><b>Rp40.000</b><button onclick="order('PP Grup 40K - 50 Member')">PESAN SEKARANG</button></div>
+    </div>
+  </div>
+
+  <div id="channel" class="panel">
+    <h3>LIST PP CHANNEL</h3>
+    <p>GAREN STORE26 | REGION JATENG</p>
+    <div class="empty">
+      <h2>PP CH</h2>
+      <p>Hubungi admin untuk menanyakan daftar harga PP CH.</p>
+      <a class="btn" href="https://wa.me/6285385772263">TANYA ADMIN</a>
+    </div>
+  </div>
+
+  <div id="saluran" class="panel">
+    <h3>LIST PP SALURAN</h3>
+    <p>GAREN STORE26 | REGION JATENG</p>
+    <div class="products">
+      <div class="card"><img src="Garen 26.jpg" alt="Saluran"><h3>SALURAN 5K</h3><p>12 PENGIKUT</p><b>Rp5.000</b><button onclick="order('Saluran 5K - 12 Pengikut')">PESAN SEKARANG</button></div>
+      <div class="card"><img src="Garen 26.jpg" alt="Saluran"><h3>SALURAN 10K</h3><p>24 PENGIKUT</p><b>Rp10.000</b><button onclick="order('Saluran 10K - 24 Pengikut')">PESAN SEKARANG</button></div>
+      <div class="card"><img src="Garen 26.jpg" alt="Saluran"><h3>SALURAN 20K</h3><p>40 PENGIKUT</p><b>Rp20.000</b><button onclick="order('Saluran 20K - 40 Pengikut')">PESAN SEKARANG</button></div>
+      <div class="card"><img src="Garen 26.jpg" alt="Saluran"><h3>SALURAN 30K</h3><p>60 PENGIKUT</p><b>Rp30.000</b><button onclick="order('Saluran 30K - 60 Pengikut')">PESAN SEKARANG</button></div>
+      <div class="card"><img src="Garen 26.jpg" alt="Saluran"><h3>SALURAN 50K</h3><p>100 PENGIKUT</p><b>Rp50.000</b><button onclick="order('Saluran 50K - 100 Pengikut')">PESAN SEKARANG</button></div>
+      <div class="card"><img src="Garen 26.jpg" alt="Saluran"><h3>SALURAN 100K</h3><p>200 PENGIKUT</p><b>Rp100.000</b><button onclick="order('Saluran 100K - 200 Pengikut')">PESAN SEKARANG</button></div>
+      <div class="card"><img src="Garen 26.jpg" alt="Saluran"><h3>SALURAN 200K</h3><p>500 PENGIKUT</p><b>Rp200.000</b><button onclick="order('Saluran 200K - 500 Pengikut')">PESAN SEKARANG</button></div>
+      <div class="card"><img src="Garen 26.jpg" alt="Saluran"><h3>SALURAN 450K</h3><p>1.050 PENGIKUT</p><b>Rp450.000</b><button onclick="order('Saluran 450K - 1.050 Pengikut')">PESAN SEKARANG</button></div>
+      <div class="card"><img src="Garen 26.jpg" alt="Saluran"><h3>SALURAN 750K</h3><p>1.750 PENGIKUT</p><b>Rp750.000</b><button onclick="order('Saluran 750K - 1.750 Pengikut')">PESAN SEKARANG</button></div>
+    </div>
+  </div>
+
+  <div id="partner" class="panel">
+    <h3>ALL OWN PT / PARTNER</h3>
+    <p>Hubungi admin untuk informasi bergabung.</p>
+    <div class="empty">
+      <h2>OPEN PARTNER</h2>
+      <a class="btn" href="https://wa.me/6283832865218">083832865218</a>
+      <a class="btn" href="https://wa.me/6285385772263">085385772263</a>
+    </div>
+  </div>
+</section>
+
+<section id="gratis">
+  <h2>GRUP GRATIS <span>GAREN26</span></h2>
+  <div class="free-grid">
+    <div>✦ ANTI HAMA</div>
+    <div>✦ ANTI SHARE LINK</div>
+    <div>✦ ANTI RUSUH</div>
+  </div>
+</section>
+
+<section class="channels">
+  <h2>SALURAN <span>RESMI</span></h2>
+  <a href="https://whatsapp.com/channel/0029Vb8ehqgL2ATxZtg3Ug2P">🟢 SALURAN PERTAMA ↗</a>
+  <a href="https://whatsapp.com/channel/0029VamwnBS72WU2CRmnt51O">🟢 SALURAN KEDUA ↗</a>
+</section>
+
+<section id="kontak">
+  <h2>HUBUNGI <span>ADMIN</span></h2>
+  <a class="contact whatsapp" href="https://wa.me/6285385772263">
+    <img src="https://cdn.simpleicons.org/whatsapp/ffffff" alt="WhatsApp"> WHATSAPP CS 085385772263
+  </a>
+  <a class="contact tiktok" href="https://www.tiktok.com/@GAREN_STORE26">
+    <img src="https://cdn.simpleicons.org/tiktok/ffffff" alt="TikTok"> TIKTOK @GAREN_STORE26
+  </a>
+</section>
+
+<footer>© 2026 GAREN STORE 62 | ALL RIGHTS RESERVED</footer>
+
+<div class="modal" id="authModal">
+  <div class="modal-box">
+    <button class="close" onclick="closeAuth()">×</button>
+    <h2 id="authTitle">LOGIN</h2>
+    <div class="auth-tabs">
+      <button onclick="setMode('login')">LOGIN</button>
+      <button onclick="setMode('register')">REGISTER</button>
+    </div>
+    <form id="authForm">
+      <input id="username" placeholder="Username" required>
+      <input id="password" type="password" placeholder="Password" required>
+      <button type="submit" id="submitAuth">MASUK</button>
+    </form>
+    <p id="authMessage">Akun demo tersimpan di browser ini.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
